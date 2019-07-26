@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #AF3800;
+  font-family: 'Rubik', sans-serif;
+}
+
+#page-wrapper {
+  position: relative;
+}
+/* Navigation */
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c74f17;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;  
+  padding: 20px;
+  letter-spacing: 3px;
+}
+
+a:hover {
+  background-color: #111;
+  padding: 20px;
+}
+
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+/* sign up form */
+#email-form {
+  display: flex;
+  height: 200px;
+  margin-top: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+#signup {
+  width: 300px;
+  height: 200px;
+  background-color: #00CFC1;
+}
+
+#signup input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  margin: 10px;
+}
+
+#signup input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+}
+
+#signup input[type="submit"]:hover {
+  background-color: #AF3800;
+  color: #fff;
+}
+
+#form {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* About Section */
+#about {
+  padding: 10px;
+  line-height: 1.6;
+  background-color: #00FFE7;
+  margin: 20px;
+}
+
+#video {
+  padding: 10px;
+}
+
+/* Packages */
+#package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  padding: 10px;
+  background-color: #00CFC1;
+}
+
+#package ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+}
+
+#package li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#package li a:hover {
+  background-color: #111;
+}
+
+/* Contact */
+#contact {
+  background-color: #FE621D;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#contact ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
