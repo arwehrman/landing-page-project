@@ -173,6 +173,10 @@ nav > ul {
 }
 
 /* Packages */
+#packages h2 {
+  color: #fff;
+  margin: 10px;
+}
 .package-grid {
   display: flex;
   flex-direction: row;
