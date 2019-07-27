@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
-
+:root {
+  --main-bg-color: #000000;
+  --card-bg-color: #2D3047;
+  --accent: #9FCC2E;
+  --light: #CCDBDC;
+  --dark: #969A97;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +13,7 @@
 }
 
 body {
-  background-color: #AF3800;
+  background-color: var(--main-bg-color);
   font-family: 'Rubik', sans-serif;
 }
 
@@ -16,6 +22,7 @@ body {
 }
 /* Navigation */
 header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   min-height: 75px;
@@ -107,6 +114,8 @@ nav > ul {
   }
 }
 
+
+
 /* sign up form */
 #email-form {
   display: flex;
@@ -121,7 +130,7 @@ nav > ul {
 #signup {
   width: 300px;
   height: 200px;
-  background-color: #00CFC1;
+  background-color: var(--accent);
 }
 
 #signup input[type="email"] {
@@ -137,12 +146,13 @@ nav > ul {
   height: 30px;
   margin: 15px 0;
   border: 0;
-  background-color: #f1c40f;
+  background-color: var(--dark);
+  color: #fff;
 }
 
 #signup input[type="submit"]:hover {
-  background-color: #AF3800;
-  color: #fff;
+  background-color: var(--light);
+  color: var(--main-bg-color);
 }
 
 #form {
@@ -154,7 +164,7 @@ nav > ul {
 #about {
   padding: 10px;
   line-height: 1.6;
-  background-color: #00FFE7;
+  background-color: var(--dark);
   margin: 20px;
 }
 
@@ -163,6 +173,12 @@ nav > ul {
 }
 
 /* Packages */
+.package-grid {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--dark);
+  margin: 20px;
+}
 #package {
   display: flex;
   flex-direction: column;
@@ -171,7 +187,7 @@ nav > ul {
   width: calc(100%  / 3);
   margin: 10px;
   padding: 10px;
-  background-color: #00CFC1;
+  background-color: var(--accent);
 }
 
 #package ul {
@@ -195,7 +211,7 @@ nav > ul {
 
 /* Contact */
 #contact {
-  background-color: #FE621D;
+  background-color: var(--dark);
   width: 100%;
   padding: 10px;
   margin: 10px;
